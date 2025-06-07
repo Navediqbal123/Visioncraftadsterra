@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VisionCraft.AI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #10002b;
+      color: white;
+      text-align: center;
+    }
+    .section {
+      padding: 40px 20px;
+    }
+    .btn {
+      padding: 14px 28px;
+      font-size: 16px;
+      background-color: #7b2cbf;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .hidden {
+      display: none;
+    }
+    .tools ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .tools li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h1>🚀 Welcome to VisionCraft.AI</h1>
+    <p>Unlock amazing AI tools and start your journey!</p>
+    <button class="btn" onclick="showAds()">Get Started</button>
+  </div>
+
+  <div id="auth" class="section hidden">
+    <h2>Login or Signup</h2>
+    <p>[Placeholder: Firebase Auth will be added later]</p>
+    <button class="btn" onclick="showTools()">Continue to Tools</button>
+  </div>
+
+  <div id="tools" class="section hidden tools">
+    <h2>AI Tools</h2>
+    <ul>
+      <li>✅ Prompt to Video</li>
+      <li>✅ Image to Video (10 images)</li>
+      <li>✅ Image Upscale</li>
+      <li>✅ Video Upscale</li>
+    </ul>
+  </div>
+
+  <script>
+    function showAds() {
+      window.open("https://www.profitableratecpm.com/xcxn6p4npz?key=7accb37748c64bee2627ab3a9efcbba4", "_blank");
+      document.getElementById("auth").classList.remove("hidden");
+    }
+    function showTools() {
+      document.getElementById("tools").classList.remove("hidden");
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  </script>
+</body>
+</html>
